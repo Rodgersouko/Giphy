@@ -10,6 +10,6 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
   getTrendingGifs() {
-    return this.http.get('https://api.giphy.comhttps://api.giphy.com/v1/gifs/trending?api_key=SY0AC7Hvmshh9ETLqISMF5D7uH10up50&limit=25&rating=g/v1/gifs/trending');
+    return this.http.get('https://api.giphy.com/v1/gifs/trending?api_key=SY0AC7Hvmshh9ETLqISMF5D7uH10up50&limit=60&rating=pg');
   }
 }
