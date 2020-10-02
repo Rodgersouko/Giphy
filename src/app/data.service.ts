@@ -12,4 +12,9 @@ export class DataService {
   getTrendingGifs() {
     return this.http.get('https://api.giphy.com/v1/gifs/trending?api_key=SY0AC7Hvmshh9ETLqISMF5D7uH10up50&limit=60&rating=pg');
   }
+
+  searchGifs(searchTerm: string) {
+    return this.http.get('https://api.giphy.com/v1/gifs/search?api_key=SY0AC7Hvmshh9ETLqISMF5D7uH10up50&limit=60&rating=pg');
+    
+  }
 }
